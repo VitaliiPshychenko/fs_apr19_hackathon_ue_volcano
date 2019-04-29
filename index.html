@@ -3,11 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Uber eats</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <header class="main-header">
+    <div class="main-header-container-1">
+      <a class="main-header-logo"><img src="images/logo.svg" alt="Uber Eats logo"></a>
+      <div class="choosing-adress">
+        <span>Asap</span>
+        <p>to</p>
+        <form>
+          <label><input type="search" name="adress" value="ul. Tarasivska St, 16"></label>
+        </form>
+      </div>
+      <div class="communication-with-user">
+        <button class="btn-signIn">Sign in</button>
+        <button class="btn-reg">Register</button>
+        <span>Корзинка</span>
+      </div>
+    </div>
+    <div class="main-header-container-2">
+      <form>
+        <input type="search" name="q" placeholder="Search for restaurant or cuisine"> 
+        <input type="submit" value="">
+      </form>
+    </div>
+  </header>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
