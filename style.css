@@ -5,10 +5,11 @@
 
 main {
   padding: 0 81px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-span > p {
-  margin: 56px 0 0 16px;
+
+main h1 {
+  margin: 56px 0 0 6.06px;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
@@ -25,7 +26,8 @@ span > p {
 }
 
 .food-foto a {
-  padding: 0 4.97px;
+  /* padding: 0 4.97px; */
+  width: 100%;
 }
 
 div.card {
@@ -62,6 +64,10 @@ p.time {
   line-height: 21px;
   color: #1d1d1d;
   margin-bottom: 20px;
+}
+
+.card:hover {
+  background-color: rgba(100, 100, 100, .04);
 }
 
 @media (max-width: 1023px) {
