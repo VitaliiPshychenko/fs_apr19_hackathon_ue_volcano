@@ -42,32 +42,28 @@ header .choosing-adress {
   height: 40px;
 }
 
-header .choosing-adress span {
+.asap {
   display: block;
   width: 65px;
   height: 40px;
-  padding-top: 7px;
+  padding: 1px 7px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
-  box-sizing: border-box;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  background: none;
 }
 
 header .choosing-adress p {
-  display: block;
-  margin: 0;
-  padding-top: 12px;
-  width: 32px;
-  height: 40px;
+  display: inline-block;
+  margin: 0 10px;
   text-align: center;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #626262;
-  box-sizing: border-box;
 }
 
 header input[type="search"] {
@@ -112,6 +108,7 @@ header .communication-with-user button {
   border-radius: 2px;
   color: #ffffff;
   background-color: #262626;
+  cursor: pointer;
 }
 
 header .communication-with-user button:hover {
@@ -152,13 +149,13 @@ header .main-header-container-2 form {
 }
 
 header .main-header-container-2 input[name="q"] {
-  width: 100%;
   padding-bottom: 15px;
   padding-left: 31px;
   font-size: 16px;
   line-height: 24px;
   border: 0;
   border-bottom: 1px solid #e0e0e0;
+  width: 100%;
 }
 
 header .main-header-container-2 input[name="q"]:focus {
@@ -377,7 +374,9 @@ footer .up-button {
     padding: 28px 32px 25px;
     background-color: #59bd5a;
     border-radius: 2px;
-    position: absolute;
+    position: fixed;
     bottom: 24px;
     right: 16px;
+    display: none;
+    cursor: pointer;
 }
