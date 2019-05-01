@@ -1,30 +1,66 @@
 @media (max-width: 1023px) {
     header .main-header-container-1 {
-        width: 750px;
+        max-width: 750px;
+        min-width: 620px;
+        width: 100%;
+        justify-content: space-between;
     }
 
     header .main-header-container-2 {
-        width: 750px; 
+        max-width: 750px;
+        min-width: 610px;
+        width: 100%;
     }
     
     header input[type="search"] {
-        width: 215px;
+        width: 200px;
     }
 
+    header .main-header-container-2 input[name="q"] {
+        max-width: 752px;
+        width: 100%;
+      }
+
     header .main-header-container-1 a {
-        margin-right: 13px;
+        padding: 0;
+        margin-right: 5px;
     }
     
     header .choosing-adress {
-        margin-right: 73px;
+        margin-right: 5px;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    header .choosing-adress p {
+        margin: 0;
+    }
+
+    header .communication-with-user {
+        max-width: 220px;
+        min-width: 200px;
+        padding-right: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header .communication-with-user a {
+        margin-left: 10px;
+    }
+
+    header .btn-reg {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     main .cards-container {
-        width: 752px;
+        max-width: 752px;
+        min-width: 600px;
+        width: 100%;
     }
 
     main .card {
-        width: 371px;
+        flex-basis: 49%;
     }
 
     main .card img {
@@ -43,11 +79,26 @@
     }
 
     header .main-header-container-1 {
-        width: 320px;
+        max-width: 320px;
+        min-width: 290px;
+    }
+
+    header .communication-with-user {
+        max-width: initial;
+        min-width: initial;
+        padding-right: 0;
+        width: initial;
+        justify-content: initial;
+    }
+
+    header .btn-reg {
+        margin-left: 12px;
     }
 
     header .main-header-container-2 {
-        width: 320px; 
+        max-width: 320px;
+        min-width: 290px;
+        width: 100%;
     }
 
     section .main-header-container-1 .main-header-logo {
@@ -63,7 +114,9 @@
         justify-content: space-between;
         position: relative;
         margin: 0 auto;
-        width: 320px;
+        max-width: 320px;
+        min-width: 290px;
+        width: 100%;
     }
 
     .true-320 form {
@@ -81,11 +134,11 @@
         color: #626262;
     }
 
-    .true-320 span {
+    .asap {
         margin-right: 16px;
     }
 
-    .true-320 span:before {
+    .asap:before {
         content: "When";
         display: block;
         position: absolute;
@@ -107,7 +160,9 @@
     }
 
     header input[type="search"] {
-        width: 227px;
+        max-width: 227px;
+        min-width: 215px;
+        width: 100%;
     }
 
     .top-header .communication-with-user button {
@@ -129,11 +184,12 @@
 
     main .cards-container {
         width: 311px;
-        display: block;
+        min-width: auto;
     }
 
     main .card {
         width: 100%;
+        flex-basis: 100%;
     }
 
     footer {
