@@ -2,37 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uber eats</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="main-header-container-1">
-      <a class="main-header-logo"><img src="images/logo.svg" alt="Uber Eats logo"></a>
-      <div class="choosing-adress">
+  <header>
+    <section class="top-header">
+      <div class="main-header-container-1">
+        <a class="main-header-logo"><img src="images/logo.svg" alt="Uber Eats logo"></a>
+        <div class="choosing-adress false-320">
+          <span>Asap</span>
+          <p>to</p>
+          <form>
+            <label><input type="search" name="adress" value="ul. Tarasivska St, 16"></label>
+          </form>
+        </div>
+        <div class="communication-with-user">
+          <button class="btn-signIn">Sign in</button>
+          <button class="btn-reg">Register</button>
+          <a href="#">Корзинка</a>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-header">
+      <div class="main-header-container-2">
+        <form>
+          <input type="search" name="q" placeholder="Search for restaurant or cuisine"> 
+          <input type="submit" value="">
+        </form>
+      </div>
+      <div class="choosing-adress true-320">
         <span>Asap</span>
-        <p>to</p>
         <form>
           <label><input type="search" name="adress" value="ul. Tarasivska St, 16"></label>
         </form>
       </div>
-      <div class="communication-with-user">
-        <button class="btn-signIn">Sign in</button>
-        <button class="btn-reg">Register</button>
-        <span>Корзинка</span>
-      </div>
-    </div>
-    <div class="main-header-container-2">
-      <form>
-        <input type="search" name="q" placeholder="Search for restaurant or cuisine"> 
-        <input type="submit" value="">
-      </form>
-    </div>
+    </section>
   </header>
+
   <main>
-    <h1>Kyiv Restaurants</h1>
     <section class="cards-container">
+      <h1>Kyiv Restaurants</h1>
+
       <div class="card">
         <div class="food-foto">
           <a href="#"><img src="images/1.png" alt="plate-foto"></a>
@@ -133,63 +147,66 @@
       </div>
     </section>
   </main>
+
   <footer>
-    <div class="footer-logo">
-      <img src="images/white-logo.png" alt="logo">
-    </div>
-    
-    <section class="columns">
-      <div class="footer-col footer-col-1">
-        <div class="language">
-          <select>
-            <option value="english" selected>ENGLISH</option>
-            <option value="russian">RUSSIAN</option>
-          </select>
+    <section class="footer-wrapper">
+      <div class="footer-logo">
+        <img src="images/white-logo.png" alt="logo">
+      </div>
+      
+      <section class="columns">
+        <div class="footer-col footer-col-1">
+          <div class="language">
+            <select>
+              <option value="english" selected>ENGLISH</option>
+              <option value="russian">RUSSIAN</option>
+            </select>
+          </div>
+          <div class="hashtag"><span>#</span>UberEats</p></div>
+          <div class="socials">
+            <a href="#">
+              <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" alt="twitter">
+            </a>
+            <a href="">
+              <img src="images/instagram.png" alt="instagram">
+            </a>     
+          </div>
         </div>
-        <div class="hashtag"><span>#</span>UberEats</p></div>
-        <div class="socials">
-          <a href="#">
-            <img src="images/facebook.png" alt="facebook">
-          </a>
-          <a href="#">
-            <img src="images/twitter.png" alt="twitter">
-          </a>
-          <a href="">
-            <img src="images/instagram.png" alt="instagram">
-          </a>     
+        <div class="footer-col footer-links footer-col-2">
+          <div class="links-column"><a href="#">About UberEats</a></div>
+          <div class="links-column"><a href="#">Become a Delivery Partner</a></div>
+          <div class="links-column"><a href="#">Become a Restaurant Partner</a></div>
         </div>
+        <div class="footer-col footer-links">
+          <div class="links-column"><a href="#">See all cities</a></div>
+          <div class="links-column"><a href="#">Pricing</a></div>
+          <div class="links-column"><a href="#">Help</a></div>
+          <div class="links-column"><a href="#">FAQs</a></div>
+        </div>
+      </section>
+
+      <div class="app-stores">
+        <a href="#">
+          <img src="images/appstore.png" alt="AppStore">
+        </a>
+        <a href="#">
+          <img src="images/googleplay.png" alt="GooglePlay">
+        </a>  
       </div>
-      <div class="footer-col footer-links footer-col-2">
-        <div class="links-column"><a href="#">About UberEats</a></div>
-        <div class="links-column"><a href="#">Become a Delivery Partner</a></div>
-        <div class="links-column"><a href="#">Become a Restaurant Partner</a></div>
+
+      <div class="terms">
+        <div class="footer-col">© 2019 Uber Technologies Inc.</div>
+        <div class="footer-col"><a href="#">Privacy</a></div>
+        <div class="footer-col"><a href="#">Terms</a></div>
       </div>
-      <div class="footer-col footer-links">
-        <div class="links-column"><a href="#">See all cities</a></div>
-        <div class="links-column"><a href="#">Pricing</a></div>
-        <div class="links-column"><a href="#">Help</a></div>
-        <div class="links-column"><a href="#">FAQs</a></div>
-      </div>
+
+      <a href="#" class="up-button"><img src="images/shape.png" alt="up"></a>
     </section>
-  
-    <div class="app-stores">
-      <a href="#">
-        <img src="images/appstore.png" alt="AppStore">
-      </a>
-      <a href="#">
-        <img src="images/googleplay.png" alt="GooglePlay">
-      </a>  
-    </div>
-  
-    <div class="terms">
-      <div class="footer-col">© 2019 Uber Technologies Inc.</div>
-      <div class="footer-col"><a href="#">Privacy</a></div>
-      <div class="footer-col"><a href="#">Terms</a></div>
-    </div>
-  
-    <a href="#" class="up-button"><img src="images/shape.png" alt="up"></a>
-  
   </footer>
+
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
